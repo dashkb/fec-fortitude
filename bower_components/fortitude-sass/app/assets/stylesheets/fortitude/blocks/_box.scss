@@ -1,0 +1,23 @@
+//------------------------------------
+//  #BOX
+//------------------------------------
+
+//
+// Box off and pad contained content.
+//
+// 1. So we can apply the `.box` class to naturally-inline elements.
+//
+
+.box {
+  @extend %cf;
+  display: block; // [1]
+  width: 100%;
+}
+
+.box--inline {
+  display: inline-block;
+}
+
+.box--rounded {
+  border-radius: $box-border-radius;
+}

@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %link{rel: 'stylesheet', href: '/css/all.css'}
+    %title= @page.title
+
+  %body
+    .container
+      .layout
+        .layout__item.xs-4of12
+          A column!
+        .layout__item.xs-8of12
+          The other column!

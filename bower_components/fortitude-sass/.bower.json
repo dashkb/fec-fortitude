@@ -1,0 +1,53 @@
+{
+  "name": "fortitude-sass",
+  "homepage": "http://fortitude.io/",
+  "version": "0.1.2",
+  "main": [
+    "app/assets/stylesheets/fortitude/tools/_functions.scss",
+    "app/assets/stylesheets/fortitude/tools/_mixins.scss",
+    "app/assets/stylesheets/fortitude/settings/_defaults.scss",
+    "app/assets/stylesheets/_fortitude.scss"
+  ],
+  "ignore": [
+    "bin",
+    "features",
+    "lib",
+    ".gitignore",
+    "Gemfile",
+    "Gemfile.lock",
+    "Rakefile",
+    "fortitude.gemspec",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Aaron Reisman <aaron@hired.com>"
+  ],
+  "description": "Fortitude provides a comprehensive framework of Rock solid CSS Patterns and Components.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "bootstrap",
+    "oocss",
+    "BEM",
+    "framework",
+    "fortitude"
+  ],
+  "license": "MIT",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.2",
+    "commit": "752b1420f367747759d5aa3ea97fd4909c9cd761"
+  },
+  "_source": "git://github.com/fortitude/fortitude-sass.git",
+  "_target": "~0.1.2",
+  "_originalSource": "fortitude-sass",
+  "_direct": true
+}

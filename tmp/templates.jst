@@ -1,0 +1,30 @@
+var _ = require("lodash");
+module.exports = {};
+module.exports["fe"] = function(ctx) {
+ return (function() {
+ var $c, $e, $o;
+
+$e = function(text, escape) {
+  return ("" + text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&#39;').replace(/\//g, '&#47;').replace(/"/g, '&quot;');
+};
+
+$c = function(text) {
+  switch (text) {
+    case null:
+    case void 0:
+      return '';
+    case true:
+    case false:
+      return '' + text;
+    default:
+      return text;
+  }
+};
+
+$o = [];
+
+$o.push("<!DOCTYPE html>\n<html>\n  <head>\n    <link rel='stylesheet' href='/css/all.css'>\n    <title>" + ($e($c(this.page.title))) + "</title>\n  </head>\n  <body>\n    <div class='container'>\n      <div class='layout'>\n        <div class='layout__item xs-4of12'>\n          A column!\n        </div>\n        <div class='layout__item xs-8of12'>\n          The other column!\n        </div>\n      </div>\n    </div>\n  </body>\n</html>");
+
+return $o.join("\n").replace(/\s([\w-]+)='true'/mg, ' $1').replace(/\s([\w-]+)='false'/mg, '').replace(/\s(?:id|class)=(['"])(\1)/mg, "");
+
+ }).call(ctx); };
